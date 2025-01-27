@@ -3,28 +3,52 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="./logo.png" type="image/x-icon">
+    <link rel="shortcut icon" href="./logo.png" type="image/x-icon" />
     <!-- Page Title -->
     <title>Writing - Your Blog for Creative Writing Tips and Inspiration</title>
 
     <!-- Meta Description -->
-    <meta name="description" content="Explore Writing, your go-to blog for creative writing tips, inspiration, and resources. Learn how to improve your writing skills and express your ideas effectively.">
+    <meta
+      name="description"
+      content="Explore Writing, your go-to blog for creative writing tips, inspiration, and resources. Learn how to improve your writing skills and express your ideas effectively."
+    />
 
     <!-- Open Graph Meta Tags (for Facebook, LinkedIn, etc.) -->
-    <meta property="og:title" content="Writing - Your Blog for Creative Writing Tips and Inspiration">
-    <meta property="og:description" content="Explore Writing, your go-to blog for creative writing tips, inspiration, and resources. Learn how to improve your writing skills and express your ideas effectively.">
-    <meta property="og:image" content="https://st4.depositphotos.com/11135096/41031/i/450/depositphotos_410311738-stock-photo-business-technology-internet-network-concept.jpg">
-    <meta property="og:url" content="https://Writing.vercel.app/">
-    <meta property="og:type" content="website">
+    <meta
+      property="og:title"
+      content="Writing - Your Blog for Creative Writing Tips and Inspiration"
+    />
+    <meta
+      property="og:description"
+      content="Explore Writing, your go-to blog for creative writing tips, inspiration, and resources. Learn how to improve your writing skills and express your ideas effectively."
+    />
+    <meta
+      property="og:image"
+      content="https://st4.depositphotos.com/11135096/41031/i/450/depositphotos_410311738-stock-photo-business-technology-internet-network-concept.jpg"
+    />
+    <meta property="og:url" content="https://Writing.vercel.app/" />
+    <meta property="og:type" content="website" />
 
     <!-- Twitter Card Meta Tags (for Twitter) -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Writing - Your Blog for Creative Writing Tips and Inspiration">
-    <meta name="twitter:description" content="Explore Writing, your go-to blog for creative writing tips, inspiration, and resources. Learn how to improve your writing skills and express your ideas effectively.">
-    <meta name="twitter:image" content="https://st4.depositphotos.com/11135096/41031/i/450/depositphotos_410311738-stock-photo-business-technology-internet-network-concept.jpg">
-    <meta name="twitter:site" content="@YourTwitterHandle">
-    <link rel="stylesheet" href="style.css">
-    <link href="https://cdn.jsdelivr.net/npm/flowbite@3.0.0/dist/flowbite.min.css" rel="stylesheet" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Writing - Your Blog for Creative Writing Tips and Inspiration"
+    />
+    <meta
+      name="twitter:description"
+      content="Explore Writing, your go-to blog for creative writing tips, inspiration, and resources. Learn how to improve your writing skills and express your ideas effectively."
+    />
+    <meta
+      name="twitter:image"
+      content="https://st4.depositphotos.com/11135096/41031/i/450/depositphotos_410311738-stock-photo-business-technology-internet-network-concept.jpg"
+    />
+    <meta name="twitter:site" content="@YourTwitterHandle" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/flowbite@3.0.0/dist/flowbite.min.css"
+      rel="stylesheet"
+    />
     <title>WritingBlog</title>
     <!-- Tailwind Play CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -36,7 +60,7 @@
     <script>
       // Configure Tailwind to enable dark mode
       tailwind.config = {
-        darkMode: "class", 
+        darkMode: "class",
       };
     </script>
     <!-- Font Awesome CDN for Icons -->
@@ -48,213 +72,299 @@
   <body class="bg-white dark:bg-gray-900">
     <!-- Header -->
     <header class="bg-gray-100 dark:bg-gray-800 sticky top-0 z-50">
-        <div class="container mx-auto flex items-center justify-between p-4">
+      <div class="container mx-auto flex items-center justify-between p-4">
         <!-- Logo and Text -->
         <div class="flex items-center space-x-2">
-            <!-- Logo -->
-            <img src="logo.png" alt="logo" class="w-16" />
-            <!-- Text -->
-            <h2 class="text-xl text-gray-500">
-            Wri<span class="text-xl text-gray-800 dark:text-white font-bold">ting</span>
-            </h2>
+          <!-- Logo -->
+          <img src="logo.png" alt="logo" class="w-16" />
+          <!-- Text -->
+          <h2 class="text-xl text-gray-500">
+            Wri<span class="text-xl text-gray-800 dark:text-white font-bold"
+              >ting</span
+            >
+          </h2>
         </div>
 
         <!-- Desktop Navigation -->
         <nav class="hidden lg:flex space-x-4 text-gray-600 dark:text-gray-300">
-            <a href="./index.html" class="hover:text-blue-500 px-2">Home</a>
-            <a href="#" class="hover:text-blue-500 px-2">Blog</a>
-            <a href="./single.html" class="hover:text-blue-500 px-2">Single Post</a>
-            <a href="#" class="hover:text-blue-500 px-2">Pages</a>
-            <a href="#" class="hover:text-blue-500 px-2">Contact</a>
+          <a href="./index.html" class="hover:text-blue-500 px-2">Home</a>
+          <a href="#" class="hover:text-blue-500 px-2">Blog</a>
+          <a href="./single.html" class="hover:text-blue-500 px-2"
+            >Single Post</a
+          >
+          <a href="#" class="hover:text-blue-500 px-2">Pages</a>
+          <a href="#" class="hover:text-blue-500 px-2">Contact</a>
         </nav>
 
         <!-- Search and Dark Mode Toggle -->
         <div class="flex items-center space-x-4">
-            <!-- Search Bar -->
-            <div class="relative hidden md:block">
+          <!-- Search Bar -->
+          <div class="relative hidden md:block">
             <input
-                type="text"
-                placeholder="Search"
-                class="bg-white border rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:text-white"
+              type="text"
+              placeholder="Search"
+              class="bg-white border rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:text-white"
             />
-            <button class="text-gray-600 dark:text-gray-300 absolute right-2 top-2">
-                <i class="fa-solid fa-magnifying-glass"></i>
-            </button>
-            </div>
-
-            <!-- Dark Mode Toggle Switch -->
             <button
+              class="text-gray-600 dark:text-gray-300 absolute right-2 top-2"
+            >
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+          </div>
+
+          <!-- Dark Mode Toggle Switch -->
+          <button
             id="theme-toggle"
             class="relative w-16 h-8 rounded-full p-1 bg-gray-200 dark:bg-gray-700 focus:outline-none transition-colors duration-200 shadow-md"
-            >
+          >
             <!-- Switch Thumb with Icons -->
             <div
-                id="theme-toggle-thumb"
-                class="absolute left-1 top-1 w-6 h-6 bg-white rounded-full shadow-md transform transition-transform duration-200 flex items-center justify-center"
+              id="theme-toggle-thumb"
+              class="absolute left-1 top-1 w-6 h-6 bg-white rounded-full shadow-md transform transition-transform duration-200 flex items-center justify-center"
             >
-                <!-- Sun Icon (Light Mode) -->
-                <svg
+              <!-- Sun Icon (Light Mode) -->
+              <svg
                 id="theme-toggle-sun-icon"
                 class="w-4 h-4 text-yellow-500"
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
                 xmlns="http://www.w3.org/2000/svg"
-                >
+              >
                 <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"
                 ></path>
-                </svg>
-                <!-- Moon Icon (Dark Mode) -->
-                <svg
+              </svg>
+              <!-- Moon Icon (Dark Mode) -->
+              <svg
                 id="theme-toggle-moon-icon"
                 class="w-4 h-4 text-blue-500 hidden"
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
                 xmlns="http://www.w3.org/2000/svg"
-                >
+              >
                 <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"
                 ></path>
-                </svg>
+              </svg>
             </div>
-            </button>
+          </button>
 
-            <!-- Mobile Menu Toggle -->
-            <button
+          <!-- Mobile Menu Toggle -->
+          <button
             onclick="toggleMenu()"
             class="lg:hidden text-gray-600 dark:text-gray-300 focus:outline-none"
-            >
+          >
             <i class="fa-solid fa-bars"></i>
-            </button>
+          </button>
         </div>
-        </div>
+      </div>
 
-        <!-- Mobile Navigation -->
-        <div
+      <!-- Mobile Navigation -->
+      <div
         id="mobileMenu"
         class="hidden lg:hidden bg-white dark:bg-gray-800 shadow-sm"
+      >
+        <nav
+          class="flex flex-col space-y-2 p-4 md:space-y-4 md:p-6 text-gray-600 dark:text-gray-300"
         >
-        <nav class="flex flex-col space-y-2 p-4 md:space-y-4 md:p-6 text-gray-600 dark:text-gray-300">
-            <a href="#" class="hover:text-blue-500">Home</a>
-            <a href="#" class="hover:text-blue-500">Blog</a>
-            <a href="./single.html" class="hover:text-blue-500">Single Post</a>
-            <a href="#" class="hover:text-blue-500">Pages</a>
-            <a href="#" class="hover:text-blue-500">Contact</a>
+          <a href="#" class="hover:text-blue-500">Home</a>
+          <a href="#" class="hover:text-blue-500">Blog</a>
+          <a href="./single.html" class="hover:text-blue-500">Single Post</a>
+          <a href="#" class="hover:text-blue-500">Pages</a>
+          <a href="#" class="hover:text-blue-500">Contact</a>
         </nav>
-        </div>
+      </div>
     </header>
 
     <!-- Main Content -->
     <main class="container mx-auto p-6">
       <!-- Hero Section -->
       <section class="py-8">
-  <div class="container mx-auto px-4 mb-[5%]">
-    <div class="relative">
-      <!-- Hero Image -->
-      <img
-        src="https://st3.depositphotos.com/11135096/36520/i/450/depositphotos_365207396-stock-photo-business-technology-internet-network-concept.jpg"
-        alt="Hero"
-        class="rounded-lg shadow-lg w-full h-[300px] md:h-[400px] lg:h-[630px] object-cover"
-      />
+        <div class="container mx-auto px-4 mb-[5%]">
+          <div class="relative">
+            <!-- Hero Image -->
+            <img
+              src="https://st3.depositphotos.com/11135096/36520/i/450/depositphotos_365207396-stock-photo-business-technology-internet-network-concept.jpg"
+              alt="Hero"
+              class="rounded-lg shadow-lg w-full h-[300px] md:h-[400px] lg:h-[630px] object-cover"
+            />
 
-      <!-- Overlay Card -->
-      <div
-        class="absolute bottom-[-10%] md:bottom-[-8%] left-[5%] md:left-[15%] bg-white dark:bg-gray-800 p-6 md:p-10 rounded-lg shadow-lg w-[90%] md:w-[60%] lg:w-[33%]"
-      >
-        <!-- Category -->
-        <span class="text-blue-500 text-sm uppercase font-bold">Technology</span>
+            <!-- Overlay Card -->
+            <div
+              class="absolute bottom-[-10%] md:bottom-[-8%] left-[5%] md:left-[15%] bg-white dark:bg-gray-800 p-6 md:p-10 rounded-lg shadow-lg w-[90%] md:w-[60%] lg:w-[33%]"
+            >
+              <!-- Category -->
+              <span class="text-blue-500 text-sm uppercase font-bold"
+                >Technology</span
+              >
 
-        <!-- Title -->
-        <h2 class="text-xl md:text-2xl font-bold text-gray-800 dark:text-white mt-2">
-          The Impact of Technology on the Workplace: How Technology is Changing
-        </h2>
+              <!-- Title -->
+              <h2
+                class="text-xl md:text-2xl font-bold text-gray-800 dark:text-white mt-2"
+              >
+                The Impact of Technology on the Workplace: How Technology is
+                Changing
+              </h2>
 
-        <!-- Author and Date -->
-        <div class="flex p-2 items-center">
-          <img
-            src="https://cdn-icons-png.flaticon.com/512/219/219983.png"
-            alt="user"
-            class="rounded-full w-6 h-6"
-          />
-          <p class="text-gray-600 dark:text-gray-400 text-sm mt-1 ml-2">
-            Jason Francisco &middot; August 20, 2022
-          </p>
+              <!-- Author and Date -->
+              <div class="flex p-2 items-center">
+                <img
+                  src="https://cdn-icons-png.flaticon.com/512/219/219983.png"
+                  alt="user"
+                  class="rounded-full w-6 h-6"
+                />
+                <p class="text-gray-600 dark:text-gray-400 text-sm mt-1 ml-2">
+                  Jason Francisco &middot; August 20, 2022
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
-    </div>
-  </div>
       </section>
 
       <!-- Advertisement Section -->
       <section class="mb-[5%]">
-        <div id="default-carousel" class="relative w-full" data-carousel="slide">
-            <!-- Carousel wrapper -->
-            <div class="relative h-[250px] overflow-hidden rounded-lg md:h-[380px] lg:h-[600px] ">
-                <!-- Item 1 -->
-                <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                <img
+        <div
+          id="default-carousel"
+          class="relative w-full"
+          data-carousel="slide"
+        >
+          <!-- Carousel wrapper -->
+          <div
+            class="relative h-[250px] overflow-hidden rounded-lg md:h-[380px] lg:h-[600px]"
+          >
+            <!-- Item 1 -->
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+              <img
                 class="w-full"
                 src="https://eightmedia.ph/wp-content/uploads/2022/05/062722_6-1024x536.png.webp"
-                />                
-              </div>
-                <!-- Item 2 -->
-                <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                <img
+              />
+            </div>
+            <!-- Item 2 -->
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+              <img
                 src="https://eightmedia.ph/wp-content/uploads/2022/05/062722_5-1024x536.png.webp"
                 class="w-full"
-                />
-                </div>
-                <!-- Item 3 -->
-                <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                 <img
+              />
+            </div>
+            <!-- Item 3 -->
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+              <img
                 src="https://eightmedia.ph/wp-content/uploads/2022/05/062722_2-1024x536.png.webp"
                 class="w-full"
-                />
-                </div>
-                <!-- Item 4 -->
-                <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                <img
+              />
+            </div>
+            <!-- Item 4 -->
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+              <img
                 src="https://eightmedia.ph/wp-content/uploads/2022/05/062722_3-1024x536.png.webp"
                 class="w-full"
-                />           
-                </div>
+              />
             </div>
-            <!-- Slider indicators -->
-            <div class="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse">
-                <button type="button" class="w-3 h-3 rounded-full" aria-current="true" aria-label="Slide 1" data-carousel-slide-to="0"></button>
-                <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
-                <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
-                <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 4" data-carousel-slide-to="3"></button>
-                <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 5" data-carousel-slide-to="4"></button>
-            </div>
-            <!-- Slider controls -->
-            <button type="button" class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
-                <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-                    <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
-                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
-                    </svg>
-                    <span class="sr-only">Previous</span>
-                </span>
-            </button>
-            <button type="button" class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
-                <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-                    <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
-                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
-                    </svg>
-                    <span class="sr-only">Next</span>
-                </span>
-            </button>
+          </div>
+          <!-- Slider indicators -->
+          <div
+            class="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse"
+          >
+            <button
+              type="button"
+              class="w-3 h-3 rounded-full"
+              aria-current="true"
+              aria-label="Slide 1"
+              data-carousel-slide-to="0"
+            ></button>
+            <button
+              type="button"
+              class="w-3 h-3 rounded-full"
+              aria-current="false"
+              aria-label="Slide 2"
+              data-carousel-slide-to="1"
+            ></button>
+            <button
+              type="button"
+              class="w-3 h-3 rounded-full"
+              aria-current="false"
+              aria-label="Slide 3"
+              data-carousel-slide-to="2"
+            ></button>
+            <button
+              type="button"
+              class="w-3 h-3 rounded-full"
+              aria-current="false"
+              aria-label="Slide 4"
+              data-carousel-slide-to="3"
+            ></button>
+            <button
+              type="button"
+              class="w-3 h-3 rounded-full"
+              aria-current="false"
+              aria-label="Slide 5"
+              data-carousel-slide-to="4"
+            ></button>
+          </div>
+          <!-- Slider controls -->
+          <button
+            type="button"
+            class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+            data-carousel-prev
+          >
+            <span
+              class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none"
+            >
+              <svg
+                class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 6 10"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M5 1 1 5l4 4"
+                />
+              </svg>
+              <span class="sr-only">Previous</span>
+            </span>
+          </button>
+          <button
+            type="button"
+            class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+            data-carousel-next
+          >
+            <span
+              class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none"
+            >
+              <svg
+                class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 6 10"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="m1 9 4-4-4-4"
+                />
+              </svg>
+              <span class="sr-only">Next</span>
+            </span>
+          </button>
         </div>
       </section>
-    
 
       <section class="mb-[5%]">
         <h2 class="text-2xl font-bold mb-4 text-gray-800 dark:text-white">
@@ -515,13 +625,12 @@
               </div>
             </div>
           </div>
-         
         </div>
         <div class="flex justify-center items-center mt-8">
           <button
             class="border-2 border-gray-300 p-2 text-gray-500 hover:bg-gray-400 hover:text-white dark:text-white rounded-md"
           >
-            <a href="#">View All Post</a> 
+            <a href="#">View All Post</a>
           </button>
         </div>
       </section>
@@ -531,9 +640,9 @@
     <footer class="bg-gray-100 dark:bg-gray-800 py-12">
       <div class="container mx-auto px-4">
         <!-- Footer Grid -->
-        <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
           <!-- About Section -->
-          <div class="mr-12">
+          <div class="sm:col-span-2 lg:col-span-1">
             <h3 class="text-xl font-bold text-gray-800 dark:text-white mb-4">
               About
             </h3>
@@ -655,7 +764,9 @@
           </div>
 
           <!-- Newsletter Section -->
-          <div class="bg-white px-10 py-6 rounded-lg dark:bg-gray-900">
+          <div
+            class="sm:col-span-2 lg:col-span-1 bg-white px-6 py-6 rounded-lg dark:bg-gray-900"
+          >
             <h3 class="text-xl font-bold text-gray-800 dark:text-white mb-4">
               Weekly Newsletter
             </h3>
@@ -679,11 +790,13 @@
         </div>
 
         <!-- Footer Bottom -->
-         <div class="border-t border-gray-200 dark:border-gray-700 pt-8">
-          <div class="flex justify-between items-center">
+        <div class="border-t border-gray-200 dark:border-gray-700 pt-8 mt-8">
+          <div
+            class="flex flex-col sm:flex-row justify-between items-center space-y-4 sm:space-y-0"
+          >
             <div class="flex items-center">
-              <img src="logo.png" alt="logo" class="w-[10%] md:w-[7%]" />
-              <div class="flex flex-col">
+              <img src="logo.png" alt="logo" class="w-12 md:w-10" />
+              <div class="flex flex-col ml-2">
                 <h2 class="text-xl text-gray-500">
                   Wri<span
                     class="text-xl text-gray-800 dark:text-white font-bold"
@@ -696,27 +809,28 @@
               </div>
             </div>
 
-            <div class="flex items-center w-[38%]">
+            <div class="flex items-center space-x-4">
               <a
                 href="#"
-                class="px-2 text-gray-600 dark:text-gray-400 hover:text-blue-500"
+                class="text-gray-600 dark:text-gray-400 hover:text-blue-500"
                 >Terms of Use</a
               >
               <a
                 href="#"
-                class="px-2 text-gray-600 dark:text-gray-400 hover:text-blue-500"
+                class="text-gray-600 dark:text-gray-400 hover:text-blue-500"
                 >Privacy Policy</a
               >
               <a
                 href="#"
-                class="px-2 text-gray-600 dark:text-gray-400 hover:text-blue-500"
+                class="text-gray-600 dark:text-gray-400 hover:text-blue-500"
                 >Cookie Policy</a
               >
             </div>
           </div>
         </div>
+      </div>
     </footer>
-  <script src="./index.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/flowbite@3.0.0/dist/flowbite.min.js"></script>
+    <script src="./index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@3.0.0/dist/flowbite.min.js"></script>
   </body>
 </html>
